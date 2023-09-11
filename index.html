@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div id="Registrasi" class="tab tab-aactive">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Nama</label>
+                <input id="username" name="username" type="text" minlength="10">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="age">Umur</label>
+                <input id="age" name="age" type="number" min="25" value="0" step="1">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="salary">Uang Sangu</label>
+                <input type="number" min="100000" max="1000000" value="0" step="100000">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="#">List Pendaftar</a>
+        <div id="ListPendaftar" class="tab">
+            <h1>List Pendaftar</h1>
+            <table id="tabelPendaftar">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Umur</th>
+                        <th>Uang Sangu</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <p>Rata-rata pendaftar memiliki uang sangu sebesar <span id="avgUangSangu" >0</span>
+                dengan Rata-rata umur<span id="avgumur"></span></span></p>
+        
+        </div>
+    </div>
+</body>
+</html>
